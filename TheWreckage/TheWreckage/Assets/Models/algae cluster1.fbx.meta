@@ -1107,8 +1107,8 @@ ModelImporter:
       name: 01idle (1)
       takeName: Armature.001|Armature.005Action
       internalID: -5142241952092147453
-      firstFrame: 0
-      lastFrame: 152
+      firstFrame: 30
+      lastFrame: 125
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1223,8 +1223,8 @@ ModelImporter:
       name: 02idle
       takeName: Armature.002|Armature.002Action
       internalID: 5138602965388526686
-      firstFrame: 0
-      lastFrame: 152
+      firstFrame: 30
+      lastFrame: 125
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1629,8 +1629,8 @@ ModelImporter:
       name: 03idle
       takeName: Armature.003|Armature.003Action
       internalID: 8645343760740499401
-      firstFrame: 0
-      lastFrame: 148
+      firstFrame: 30
+      lastFrame: 125
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -2354,8 +2354,8 @@ ModelImporter:
       name: 05idle
       takeName: Armature.005|Armature.004Action
       internalID: -5346695045666235549
-      firstFrame: 6
-      lastFrame: 109
+      firstFrame: 30
+      lastFrame: 125
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
