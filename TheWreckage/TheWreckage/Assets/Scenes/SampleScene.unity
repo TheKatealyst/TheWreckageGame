@@ -785,6 +785,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &967854701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 967854703}
+  - component: {fileID: 967854702}
+  m_Layer: 0
+  m_Name: DialogueZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &967854702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967854701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27e2fca7a1bf4f841a4215230bd7e6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Actor
+  Name: '[The forbidden zone..]'
+  Dialogue: {fileID: 11400000, guid: 2582c30116ec1e041af69ab209d50a60, type: 2}
+--- !u!4 &967854703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967854701}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1022513175
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +1009,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2278728515656073416, guid: 5fb0bc3f8b290074bb5f6c2a345001b6, type: 3}
   m_PrefabInstance: {fileID: 1085073150}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1228924324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1228924326}
+  - component: {fileID: 1228924325}
+  m_Layer: 0
+  m_Name: DialogueController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1228924325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228924324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fba88c8073f3d3409853e9975b48ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  DialogueParent: {fileID: 5820105791440853399}
+  DialogTitleText: {fileID: 5820105791440853398}
+  DialogBodyText: {fileID: 5820105791440853397}
+  responseButtonPrefab: {fileID: 4299255684709218272, guid: 4e196d4f7bd8f4e45809d75a8c480c75, type: 3}
+  responseButtonContainer: {fileID: 5820105791440853396}
+--- !u!4 &1228924326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228924324}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1273150497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,21 +1885,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1866638993}
     m_Modifications:
-    - target: {fileID: 152394595829668292, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
-      propertyPath: lines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 152394595829668292, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
-      propertyPath: 'lines.Array.data[0]'
-      value: There are skeletons all over the ocean floor but... I've never seen
-        these ones before, and definitely not in such an amalgamation like this.
-        Who are they? What happned here?
-      objectReference: {fileID: 0}
-    - target: {fileID: 152394595829668292, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
-      propertyPath: 'lines.Array.data[1]'
-      value: 'one day, the inpenetratable sea currents change direction and a new
-        area is waiting to be explored... '
-      objectReference: {fileID: 0}
     - target: {fileID: 3378055958345391537, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1835,7 +1915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3378055958345391537, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -900
+      value: -850
       objectReference: {fileID: 0}
     - target: {fileID: 3378055958345391537, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1871,7 +1951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3378055958345391537, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -350
+      value: -375
       objectReference: {fileID: 0}
     - target: {fileID: 3378055958345391537, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1894,6 +1974,38 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
+--- !u!224 &5820105791440853396 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3275383246875698276, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
+  m_PrefabInstance: {fileID: 5820105791440853395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5820105791440853397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 535297022328849835, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
+  m_PrefabInstance: {fileID: 5820105791440853395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &5820105791440853398 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8489751393225974097, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
+  m_PrefabInstance: {fileID: 5820105791440853395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &5820105791440853399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5945213890735826013, guid: ade2ef002d8cf8942ba3c911902dccd4, type: 3}
+  m_PrefabInstance: {fileID: 5820105791440853395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8949834210321434684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1971,3 +2083,5 @@ SceneRoots:
   - {fileID: 1938565724}
   - {fileID: 1695515689}
   - {fileID: 445176381}
+  - {fileID: 1228924326}
+  - {fileID: 967854703}
