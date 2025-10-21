@@ -1530,7 +1530,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022513175}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2a57ea7605fef42479b3d9ea9d818992, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1586,8 +1586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScannerScript
   TerrainScannerPrefab: {fileID: 5882671455577859907, guid: 4cde11f6f5265234caa01e83ef1ce167, type: 3}
-  scanDuration: 10
-  scanSize: 5
+  scanDuration: 1
+  scanSize: 8
 --- !u!1001 &1085073150
 PrefabInstance:
   m_ObjectHideFlags: 0
