@@ -5,15 +5,12 @@ public class AlgaeWallTrigger : MonoBehaviour
 {
     private bool playerInside = false;
     private Animator[] childAnimators;
-    private Collider parentCollider;
+    public Collider parentCollider;
 
     void Start()
     {
         // Get all Animator components from children (including this object's children)
         childAnimators = GetComponentsInChildren<Animator>();
-
-        // Get the collider from the parent object instead of this one
-        parentCollider = GetComponentInParent<Collider>();
 
         if (parentCollider == null)
             Debug.LogError("[AlgaeWallTrigger] No collider found in parent of " + gameObject.name);
