@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd98c53df9ae3743906f86b57a3b1d5, type: 3}
+  m_Name: DialogueCave
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: The darkness of the cave stretches around you as your vision becomes
+      limited. Only soundwaves of your siren song will illuminate your path forwards.
+    responses:
+    - responseText: "\u201CI wonder what I can find here?\u201D"
+      nextNode:
+        dialogueText: "\u201CBesides the origins of the metallic being there might
+          be more creatures and secrets hidden away in this cavern. It could be worthwhile
+          to explore.. as long as I don\u2019t get lost.\u201D "
+        responses:
+        - responseText: Close
+          nextNode:
+            dialogueText: 
+            responses: []
+    - responseText: "\u201CI don\u2019t want to get lost.. or killed\u201D"
+      nextNode:
+        dialogueText: "\u201CI better move carefully. Who knows what could be hiding
+          in the dark? Either way I want to find out where that entity came from..\u201D "
+        responses:
+        - responseText: Close
+          nextNode:
+            dialogueText: 
+            responses: []

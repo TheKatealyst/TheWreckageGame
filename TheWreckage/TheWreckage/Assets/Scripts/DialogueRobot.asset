@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd98c53df9ae3743906f86b57a3b1d5, type: 3}
+  m_Name: DialogueRobot
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: "\u201CWait.. what\u2019s that.. thing? I\u2019ve never seen anything
+      like it\u201D"
+    responses:
+    - responseText: "\u201CThe shine of it.. What is this thing?\u201D"
+      nextNode:
+        dialogueText: "\u201CThe strange entity is cold to the touch and inorganic
+          like the rocks on the seafloor. It is damaged, a small crab has claimed
+          it as its new home, The machine seems to have left behind a trail of broken
+          parts..\""
+        responses:
+        - responseText: "Follow the path and find the unit\u2019s origins."
+          nextNode:
+            dialogueText: 
+            responses: []
+    - responseText: "\u201CBest investigate and make sure it\u2019s not harmful to
+        the wildlife.\u201D"
+      nextNode:
+        dialogueText: "\u201CIt\u2019s not alive.. maybe it never was. Judging by
+          a hole on the side it was attacked and dragged itself away with its claws.
+          Where did it come from?"
+        responses:
+        - responseText: "Follow the path and find the unit\u2019s origins."
+          nextNode:
+            dialogueText: 
+            responses: []

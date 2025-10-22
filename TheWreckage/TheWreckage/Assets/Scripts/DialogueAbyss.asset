@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd98c53df9ae3743906f86b57a3b1d5, type: 3}
+  m_Name: DialogueAbyss
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: "\u201CI think I\u2019ve made my way out of the cavern! but wait..
+      what is this?\u201D"
+    responses:
+    - responseText: '*Look around*'
+      nextNode:
+        dialogueText: "Tall black obelisks of unknown nature rise from the barren
+          sand, the water is polluted with a strange essence you\u2019ve never seen
+          before.. more metallic husks litter the seafloor. Wherever you are you
+          feel deeply out of place.."
+        responses:
+        - responseText: "\u201CThis is horrifying.. it might be wise if I turn back.
+            but..\u201D"
+          nextNode:
+            dialogueText: "But.. if the pollution of this area spreads further to
+              the surrounding area.. to my home. It wouldn\u2019t just be my safety
+              that\u2019s threatened but that of the entire ocean. I must know what
+              is causing this taint."
+            responses:
+            - responseText: Continue the search..
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: "\u201CThis must be where that entity came from.\u201D"
+          nextNode:
+            dialogueText: And it looks like there were dozens more.. But what are
+              those obelisks? Why are there no plants here? and whatever caused the
+              destruction of the metal beings?
+            responses:
+            - responseText: Continue the search..
+              nextNode:
+                dialogueText: 
+                responses: []

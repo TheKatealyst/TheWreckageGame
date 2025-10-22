@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd98c53df9ae3743906f86b57a3b1d5, type: 3}
+  m_Name: DialogueFacility
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: 'A tall structure looms over you, filth spews from its pipes into
+      the open ocean.  This is it: The origin of the taint and the metallic beings.  
+      You spot a possible entrance below at the foot of the edifice alongside another
+      damaged being. This one appears to be.. organic? '
+    responses:
+    - responseText: '"Take a look at it"'
+      nextNode:
+        dialogueText: "You remove the helmet of the creature, pale sunken eyes stare
+          back at you, the eyeballs are rolled back inside of their head. The being
+          is made of flesh and bone is bipedal and doesn\u2019t have any gills or
+          fins.  You wonder how it got here.. "
+        responses:
+        - responseText: '*Take a closer look at it.*'
+          nextNode:
+            dialogueText: "You look at the fabrics the individual is wearing. The
+              back of it reads: \u201CWelder - Atlantic Deep Sea Colony\u201D"
+            responses:
+            - responseText: You have no idea what that means.
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: '*This is creepy enough, just leave.*'
+          nextNode:
+            dialogueText: 
+            responses: []

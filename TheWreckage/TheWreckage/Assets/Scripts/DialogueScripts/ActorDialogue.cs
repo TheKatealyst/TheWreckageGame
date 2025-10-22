@@ -7,10 +7,7 @@ public class Actor : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SpeakTo();
-        }
+
     }
 
     //Test function to Trigger dialogue for this actor by pressing space.

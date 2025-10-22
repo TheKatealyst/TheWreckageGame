@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd98c53df9ae3743906f86b57a3b1d5, type: 3}
+  m_Name: DialogueTitan
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: "A gigantic inorganic entity lies dormant in the distance.. It
+      is unlike anything you\u2019ve ever witnessed. You feel like it must have been
+      able to move itself across the seafloor at some point yet you cannot conceive
+      how it ever could.."
+    responses:
+    - responseText: "\u201CWhy is this place so barren?\u201D"
+      nextNode:
+        dialogueText: 'An inhale through your gills answers your question: The water
+          is foul and blighted.  You cough, it causes a sharp pain in your chest.
+          Pollution radiates from the east; its source is close.  '
+        responses:
+        - responseText: Continue..
+          nextNode:
+            dialogueText: 
+            responses: []
+    - responseText: '*Gaze at the behemoth.*'
+      nextNode:
+        dialogueText: 'A feeling of dread overcomes you.. if that, thing. were ever
+          animated again it could destroy anything in its wake. A chill runs along
+          your spine. '
+        responses:
+        - responseText: Continue..
+          nextNode:
+            dialogueText: 
+            responses: []
