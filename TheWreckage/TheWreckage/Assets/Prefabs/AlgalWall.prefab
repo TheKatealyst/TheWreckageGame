@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5537552645876854849}
   - component: {fileID: 5387044182728659018}
   - component: {fileID: 8217159580490895522}
+  - component: {fileID: 1980725984453942857}
   m_Layer: 0
   m_Name: MermaidCheck
   m_TagString: Untagged
@@ -31,7 +32,13 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.54, z: 0}
   m_LocalScale: {x: 7.9999995, y: 7.9999995, z: 7.9999995}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 8776792471967292756}
+  - {fileID: 3806478697478177514}
+  - {fileID: 706595245867552514}
+  - {fileID: 6958655276646408514}
+  - {fileID: 6259114041794982714}
+  - {fileID: 6268734927177170732}
   m_Father: {fileID: 4718600850533833863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5537552645876854849
@@ -111,6 +118,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1980725984453942857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2497365099440836391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2011beaba11229646b3cdd51ac21eedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlgaeWallTrigger
 --- !u!1 &6116133427026682449
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,12 +160,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8776792471967292756}
-  - {fileID: 3806478697478177514}
-  - {fileID: 706595245867552514}
-  - {fileID: 6958655276646408514}
-  - {fileID: 6259114041794982714}
-  - {fileID: 6268734927177170732}
   - {fileID: 3811739055271607763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -177,23 +190,35 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4718600850533833863}
+    m_TransformParent: {fileID: 3811739055271607763}
     m_Modifications:
     - target: {fileID: -8961359253771211100, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_Name
       value: tangleSML3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2489984
+      value: 0.031124804
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.06750001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.20800006
+      value: -0.026000012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -333,23 +358,35 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4718600850533833863}
+    m_TransformParent: {fileID: 3811739055271607763}
     m_Modifications:
     - target: {fileID: -8961359253771211100, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_Name
       value: tangleSML3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2489984
+      value: 0.031124804
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.06750001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.20800006
+      value: -0.026000012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -489,23 +526,35 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4718600850533833863}
+    m_TransformParent: {fileID: 3811739055271607763}
     m_Modifications:
     - target: {fileID: -8961359253771211100, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_Name
       value: tangleSML3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2489984
+      value: 0.031124804
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.06750001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.20800006
+      value: -0.026000012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -645,23 +694,35 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4718600850533833863}
+    m_TransformParent: {fileID: 3811739055271607763}
     m_Modifications:
     - target: {fileID: -8961359253771211100, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_Name
       value: tangleSML3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2489984
+      value: 0.031124804
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.06750001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.20800006
+      value: -0.026000012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -801,23 +862,35 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4718600850533833863}
+    m_TransformParent: {fileID: 3811739055271607763}
     m_Modifications:
     - target: {fileID: -8961359253771211100, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_Name
       value: tangleSML3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2489984
+      value: 0.031124804
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.06750001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.20800006
+      value: -0.026000012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -957,23 +1030,35 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4718600850533833863}
+    m_TransformParent: {fileID: 3811739055271607763}
     m_Modifications:
     - target: {fileID: -8961359253771211100, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_Name
       value: tangleSML3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12500001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2489984
+      value: 0.031124804
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.06750001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.20800006
+      value: -0.026000012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 777358deb0795744cb9a780a2b583b5f, type: 3}
       propertyPath: m_LocalRotation.w
