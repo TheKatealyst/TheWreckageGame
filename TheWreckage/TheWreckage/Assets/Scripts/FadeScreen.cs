@@ -11,6 +11,7 @@ public class ScreenFadeTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        fadeImage.enabled = true;
         if (!hasFaded && other.CompareTag("Player"))
         {
             StartCoroutine(FadeToBlack());
