@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd98c53df9ae3743906f86b57a3b1d5, type: 3}
+  m_Name: DialogueEnding
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: You've arrived at last.. however doubt swirls inside your mind.
+      You've come so far despite your resivations will you overcome your fears one
+      last time
+    responses:
+    - responseText: '"It cannot be worth risking my scales."'
+      nextNode:
+        dialogueText: '"Yet it could spell doom upon the rest of the world I know.
+          Am I sure?"'
+        responses:
+        - responseText: '"Yes, leave now"'
+          nextNode:
+            dialogueText: You have succumed to your self-presavation instincts. The
+              pollution of the facility continues to spread and destroys more flora
+              & fauna. The ultimate cause of it all remains a mystery.
+            responses:
+            - responseText: The End
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: '"Then it''s worth the risk." *Contiue*'
+          nextNode:
+            dialogueText: The doors to the facility open. You enter with caution
+              but filled with determination.. You can brave the horros within. You
+              can stop the pollution.
+            responses:
+            - responseText: The End
+              nextNode:
+                dialogueText: 
+                responses: []
+    - responseText: '"For the sake of the biozone I lay down my life"'
+      nextNode:
+        dialogueText: The doors to the facility open. You enter with caution but
+          filled with determination.. You can brave the horros within. You can stop
+          the pollution.
+        responses:
+        - responseText: The End
+          nextNode:
+            dialogueText: 
+            responses: []
